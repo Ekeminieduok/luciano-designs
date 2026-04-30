@@ -1,7 +1,10 @@
 export default function Faqs() {
   return (
-    <div>
-      <h2>Learn more about this</h2>
+   <section>
+
+    <div className="flex col-1 ">
+      <h1>About us</h1>
     </div>
+   </section>
   );
 }
