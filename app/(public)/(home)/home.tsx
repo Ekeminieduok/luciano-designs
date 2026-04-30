@@ -71,7 +71,7 @@ export default function HomePage() {
           className="text-[42px] font-light italic text-[#1e1b18] leading-[1.15]"
           style={{ fontFamily: "'Cormorant Garamond', serif" }}
         >
-          "Good design is a room you never want to leave."
+          Good design is a room you never want to leave.
         </h2>
         <div className="flex flex-col gap-5">
           <div className="w-9 h-px bg-[#c8a97e]" />
