@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import { useCart } from "@/app/context/cart-context";
 
 interface ProductProps {
   src: string;
@@ -11,6 +12,7 @@ interface ProductProps {
   price: string;
   height: string;
   basePrice?: number;
+  productId?: string;
 }
 
 export default function ProductCard({
@@ -21,9 +23,11 @@ export default function ProductCard({
   price,
   height,
   basePrice,
+  productId,
 }: ProductProps) {
   const [quantity, setQuantity] = useState(1);
   const [added, setAdded] = useState(false);
+  const { addItem } = useCart();
 
   const decrement = () => setQuantity((q) => Math.max(1, q - 1));
   const increment = () => setQuantity((q) => q + 1);
@@ -34,8 +38,14 @@ export default function ProductCard({
       : null;
 
   const handleAdd = () => {
+    if (basePrice && productId && name) {
+      addItem({ id: productId, name, category, src, basePrice, quantity });
+    }
     setAdded(true);
-    setTimeout(() => setAdded(false), 1500);
+    setTimeout(() => {
+      setAdded(false);
+      setQuantity(1);
+    }, 1500);
   };
 
   return (
@@ -63,7 +73,7 @@ export default function ProductCard({
 
         {/* Quantity + Add to cart */}
         <div className="flex items-center gap-2">
-    
+          {/* Stepper */}
           <div className="flex items-center border border-[#e5e0d8]">
             <button
               onClick={(e) => {
@@ -101,7 +111,7 @@ export default function ProductCard({
           </button>
         </div>
 
-        {/* Subtotal — only shown when quantity > 1 and basePrice is provided */}
+        {/* Live subtotal */}
         {subtotal && quantity > 1 && (
           <div className="mt-3 flex justify-between text-[11px] text-[#7a7268]">
             <span>Subtotal</span>

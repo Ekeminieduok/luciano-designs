@@ -29,6 +29,7 @@ export default function Product() {
 
       <div className="grid grid-cols-3 gap-[1.5px] bg-[#e5e0d8] mb-[1.5px]">
         <ProductCard
+          productId="knot-lounge-chair"
           src="/images/chair-knot-hero.webp"
           alt="Sculptural knotted lounge chair in terracotta"
           category="Seating"
@@ -38,6 +39,7 @@ export default function Product() {
           basePrice={680000}
         />
         <ProductCard
+          productId="dancer-table-lamp"
           src="/images/coffee-table-wood.webp"
           alt="Hexagonal walnut coffee table"
           category="Lighting"
@@ -47,10 +49,11 @@ export default function Product() {
           basePrice={420000}
         />
         <ProductCard
+          productId="sculptural-lamp"
           src="/images/lamp-sculptural.webp"
           alt="Sculptural dancer table lamp"
-          category="chairs"
-          name=""
+          category="Chairs"
+          name="Sculptural Lamp"
           price="From ₦290,000"
           height="h-[320px]"
           basePrice={290000}
@@ -59,6 +62,7 @@ export default function Product() {
 
       <div className="grid grid-cols-3 gap-[1.5px] bg-[#e5e0d8]">
         <ProductCard
+          productId="luxe-dining-chair"
           src="/images/chairs-grey.jpg"
           alt="Cream and grey upholstered luxury dining chairs"
           category="Dining"
@@ -68,6 +72,7 @@ export default function Product() {
           basePrice={195000}
         />
         <ProductCard
+          productId="glass-coffee-table"
           src="/images/coffee-table-glass.webp"
           alt="Round glass top coffee table"
           category="Tables"
@@ -77,6 +82,7 @@ export default function Product() {
           basePrice={310000}
         />
         <ProductCard
+          productId="walnut-dining-chair"
           src="/images/chair-wood-dining.webp"
           alt="Walnut wood dining chair"
           category="Dining"
@@ -86,8 +92,9 @@ export default function Product() {
           basePrice={220000}
         />
         <ProductCard
+          productId="center-table"
           src="/images/center table.png"
-          alt="center table"
+          alt="Center table"
           category="Tables"
           name="Center Table"
           price="From ₦105,000"
@@ -95,6 +102,7 @@ export default function Product() {
           basePrice={105000}
         />
       </div>
+
       <div className="py-6">
         <AccentPrices />
       </div>

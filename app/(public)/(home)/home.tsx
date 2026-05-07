@@ -5,7 +5,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import FillerSection from "./filler-section";
-import Tracker from "./tracker"
+import Tracker from "./tracker";
 
 export default function HomePage() {
   return (
@@ -61,9 +61,9 @@ export default function HomePage() {
             Shop Now
           </Link>
         </div>
-     </section>
+      </section>
 
-     <Tracker />
+      <Tracker />
 
       {/* header */}
       <div className="grid grid-cols-2 gap-20 items-center px-12 py-20 border-b border-[#e5e0d8]">
@@ -87,7 +87,7 @@ export default function HomePage() {
             functional, and built to last.
           </p>
           <Link
-            href="/about"
+            href="/faqs"
             className="self-start text-[11px] tracking-[0.12em] uppercase text-[#1e1b18] border-b border-[#c8a97e] pb-0.5 no-underline mt-2"
           >
             Meet the studio →
@@ -95,7 +95,7 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* Products      */}
+      {/* Products*/}
 
       <div
         className="grid border-t border-b border-[#e5e0d8]"
@@ -163,22 +163,3 @@ export default function HomePage() {
   );
 }
 
-// export default async function HomePage() {
-//   const products = await stripe.products.list({
-//     expand: ["data.default_price"],
-//     limit: 5,
-//   });
-
-//   return (
-//     <div>
-//       <section>
-//         <div>
-//           <div>
-//             <h2>Luciano designs</h2>
-//             <p>Discover the latest products at the best prices</p>
-//           </div>
-//         </div>
-//       </section>
-//     </div>
-//   );
-// }

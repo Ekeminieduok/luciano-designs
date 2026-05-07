@@ -3,16 +3,18 @@
 import Link from "next/link";
 import { CiShoppingCart } from "react-icons/ci";
 import { usePathname } from "next/navigation";
+import { useCart } from "@/app/context/cart-context";
 
 const links = [
   { href: "/", label: "Home" },
   { href: "/products", label: "Products" },
   { href: "/faqs", label: "FAQs" },
-  { href: "/cart", label: "Cart", icon: <CiShoppingCart size={22} /> },
+  { href: "/cart", label: "Cart", icon: true },
 ];
 
 export default function Navbar() {
   const pathname = usePathname();
+  const { totalItems } = useCart();
 
   return (
     <nav className="w-full sticky top-0 z-50 bg-white/85 backdrop-blur-md border-b border-[#ece9e3]">
@@ -51,7 +53,14 @@ export default function Navbar() {
                     ].join(" ")}
                   >
                     {link.icon ? (
-                      <span className="flex items-center">{link.icon}</span>
+                      <span className="relative flex items-center">
+                        <CiShoppingCart size={22} />
+                        {totalItems > 0 && (
+                          <span className="absolute -top-1.5 -right-2 min-w-4 h-4 px-1 flex items-center justify-center bg-[#c8a97e] text-white text-[8px] font-medium rounded-full leading-none">
+                            {totalItems > 99 ? "99+" : totalItems}
+                          </span>
+                        )}
+                      </span>
                     ) : (
                       link.label
                     )}
