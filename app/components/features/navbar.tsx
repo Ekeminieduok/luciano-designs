@@ -19,7 +19,10 @@ export default function Navbar() {
   return (
     <nav className="w-full sticky top-0 z-50 bg-white/85 backdrop-blur-md border-b border-[#ece9e3]">
       <div className="mx-auto flex max-w-275 items-center justify-between px-8 h-17">
-        <Link href="/" className="flex flex-col gap-0.5 no-underline group">
+        <Link
+          href="/"
+          className="flex flex-col gap-0.5 no-underline group -ml-12"
+        >
           <span
             className="text-[22px] font-semibold tracking-[0.06em] text-[#1c1a17] leading-none"
             style={{ fontFamily: "'Cormorant Garamond', serif" }}
