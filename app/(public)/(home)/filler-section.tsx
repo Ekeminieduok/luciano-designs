@@ -2,19 +2,20 @@
 
 export default function FillerSection() {
   return (
-    <div className="px-12 py-20 border-t border-[#e5e0d8]">
-      <div className="mb-12">
+    <div className="px-6 md:px-12 py-14 md:py-20 border-t border-[#e5e0d8]">
+      <div className="mb-10 md:mb-12">
         <p className="text-[9px] tracking-[0.26em] uppercase text-[#c8a97e] font-medium mb-3">
           Why Luciano
         </p>
         <h2
-          className="text-[36px] font-light text-[#1e1b18] leading-[1.1]"
+          className="text-[28px] md:text-[36px] font-light text-[#1e1b18] leading-[1.1]"
           style={{ fontFamily: "'Cormorant Garamond', serif" }}
         >
           Craft you can <em className="italic">feel</em>
         </h2>
       </div>
-      <div className="grid grid-cols-4 gap-px bg-[#e5e0d8] border border-[#e5e0d8]">
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-px bg-[#e5e0d8] border border-[#e5e0d8]">
         {[
           {
             n: "01",

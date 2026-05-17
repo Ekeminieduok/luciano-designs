@@ -13,9 +13,10 @@ export default function HomePage() {
       className="bg-[#f7f5f2] text-[#1e1b18]"
       style={{ fontFamily: "'Jost', sans-serif" }}
     >
+      {/* ── Hero ── */}
       <section
         className="relative w-full"
-        style={{ height: "88vh", minHeight: 560 }}
+        style={{ height: "88vh", minHeight: 520 }}
       >
         <Image
           src="/images/homebg.jpeg"
@@ -30,16 +31,13 @@ export default function HomePage() {
           style={{ background: "rgba(18, 14, 10, 0.58)" }}
         />
 
-        {/* Centered content — matching the reference layout */}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
-          {/* Eyebrow */}
-          <p className="text-[11px] tracking-[0.32em] uppercase text-[#c8a97e] font-medium mb-6">
+          <p className="text-[10px] sm:text-[11px] tracking-[0.32em] uppercase text-[#c8a97e] font-medium mb-4 sm:mb-6">
             Luciano Designs — Lagos
           </p>
 
-          {/* Main headline — big, white, serif, matches reference weight */}
           <h1
-            className="text-[64px] font-semibold uppercase tracking-[0.04em] text-white leading-[1.05] mb-6 max-w-205"
+            className="text-[40px] sm:text-[52px] md:text-[64px] font-semibold uppercase tracking-[0.04em] text-white leading-[1.05] mb-4 sm:mb-6 max-w-xs sm:max-w-xl md:max-w-4xl"
             style={{ fontFamily: "'Cormorant Garamond', serif" }}
           >
             Design Your
@@ -47,16 +45,14 @@ export default function HomePage() {
             <em className="italic font-normal text-[#c8a97e]">Dream</em> Space
           </h1>
 
-          {/* Subheadline — matches reference */}
-          <p className="text-[16px] font-light text-white/80 max-w-145 leading-[1.75] mb-10 tracking-[0.02em]">
+          <p className="text-[14px] sm:text-[16px] font-light text-white/80 max-w-xs sm:max-w-md md:max-w-2xl leading-[1.75] mb-8 sm:mb-10 tracking-[0.02em]">
             Elevate your home with our curated selection of stylish furniture
             and interior designs.
           </p>
 
-          {/* CTA button — gold fill matching reference */}
           <Link
             href="/products"
-            className="inline-block bg-[#c8a97e] text-[#1e1b18] text-[14px] font-semibold tracking-[0.08em] uppercase px-10 py-4 no-underline transition-all duration-200 hover:bg-[#b8956a]"
+            className="inline-block bg-[#c8a97e] text-[#1e1b18] text-[12px] sm:text-[14px] font-semibold tracking-[0.08em] uppercase px-8 sm:px-10 py-3.5 sm:py-4 no-underline transition-all duration-200 hover:bg-[#b8956a]"
           >
             Shop Now
           </Link>
@@ -65,23 +61,23 @@ export default function HomePage() {
 
       <Tracker />
 
-      {/* header */}
-      <div className="grid grid-cols-2 gap-20 items-center px-12 py-20 border-b border-[#e5e0d8]">
+      {/* ── About strip ── */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 items-center px-6 sm:px-10 md:px-12 py-14 sm:py-20 border-b border-[#e5e0d8]">
         <h2
-          className="text-[42px] font-light italic text-[#1e1b18] leading-[1.15]"
+          className="text-[28px] sm:text-[34px] md:text-[42px] font-light italic text-[#1e1b18] leading-[1.15]"
           style={{ fontFamily: "'Cormorant Garamond', serif" }}
         >
           Good design is a room you never want to leave.
         </h2>
         <div className="flex flex-col gap-5">
           <div className="w-9 h-px bg-[#c8a97e]" />
-          <p className="text-[13.5px] text-[#7a7268] leading-[1.85] font-light">
+          <p className="text-[13px] sm:text-[13.5px] text-[#7a7268] leading-[1.85] font-light">
             At Luciano Designs, we believe furniture should do more than fill a
             room. Each piece is considered — the weight of the wood, the curve
             of an armrest, the way afternoon light hits a surface. We design for
             feeling.
           </p>
-          <p className="text-[13.5px] text-[#7a7268] leading-[1.85] font-light">
+          <p className="text-[13px] sm:text-[13.5px] text-[#7a7268] leading-[1.85] font-light">
             Based in Lagos, we work with clients across West Africa and beyond
             to create interiors that are deeply personal, beautifully
             functional, and built to last.
@@ -95,13 +91,12 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* Products*/}
-
+      {/* ── Feature split ── */}
       <div
-        className="grid border-t border-b border-[#e5e0d8]"
-        style={{ gridTemplateColumns: "3fr 2fr", minHeight: 440 }}
+        className="grid grid-cols-1 md:grid-cols-[3fr_2fr] border-t border-b border-[#e5e0d8]"
       >
-        <div className="relative overflow-hidden border-r border-[#e5e0d8]">
+        {/* Image — full width on mobile, fixed height; natural on desktop */}
+        <div className="relative overflow-hidden border-b md:border-b-0 md:border-r border-[#e5e0d8] h-75 sm:h-95 md:h-auto md:min-h-110">
           <Image
             src="/images/layer.jpg"
             alt="layers"
@@ -109,12 +104,13 @@ export default function HomePage() {
             className="object-cover object-center"
           />
         </div>
-        <div className="bg-[#1e1b18] flex flex-col justify-center px-12 py-16">
-          <p className="text-[9px] tracking-[0.26em] uppercase text-[#6b5e4e] mb-6">
+
+        <div className="bg-[#1e1b18] flex flex-col justify-center px-8 sm:px-12 py-12 sm:py-16">
+          <p className="text-[9px] tracking-[0.26em] uppercase text-[#6b5e4e] mb-5 sm:mb-6">
             The Luciano Edit
           </p>
           <h2
-            className="text-[40px] font-light italic text-[#f0ebe3] leading-[1.15] mb-6"
+            className="text-[30px] sm:text-[36px] md:text-[40px] font-light italic text-[#f0ebe3] leading-[1.15] mb-5 sm:mb-6"
             style={{ fontFamily: "'Cormorant Garamond', serif" }}
           >
             Designed for
@@ -123,13 +119,13 @@ export default function HomePage() {
             <br />
             actually live.
           </h2>
-          <p className="text-[13px] text-[#8a7e72] leading-[1.8] font-light mb-10">
+          <p className="text-[13px] text-[#8a7e72] leading-[1.8] font-light mb-8 sm:mb-10">
             Every home has its own rhythm. We listen to yours before we design
             anything — then we make it beautiful.
           </p>
           <Link
             href="/contact"
-            className="self-start bg-[#f7f5f2] text-[#1e1b18] text-[11px] font-medium tracking-[0.12em] uppercase px-7 py-3.25 no-underline"
+            className="self-start bg-[#f7f5f2] text-[#1e1b18] text-[11px] font-medium tracking-[0.12em] uppercase px-7 py-3 no-underline"
           >
             Book a consultation
           </Link>
@@ -138,22 +134,22 @@ export default function HomePage() {
 
       <FillerSection />
 
-      {/* Testimonials  */}
-      <section className="px-12 py-20 text-center border-t border-[#e5e0d8]">
+      {/* ── Testimonial ── */}
+      <section className="px-6 sm:px-12 py-16 sm:py-20 text-center border-t border-[#e5e0d8]">
         <div
-          className="text-[72px] leading-[0.6] italic text-[#e5e0d8] mb-6"
+          className="text-[64px] sm:text-[72px] leading-[0.6] italic text-[#e5e0d8] mb-6"
           style={{ fontFamily: "'Cormorant Garamond', serif" }}
         >
-          "
+          
         </div>
         <p
-          className="text-[26px] font-light italic text-[#1e1b18] max-w-145 mx-auto mb-8 leading-[1.55]"
+          className="text-[19px] sm:text-[22px] md:text-[26px] font-light italic text-[#1e1b18] max-w-xs sm:max-w-lg md:max-w-2xl mx-auto mb-6 sm:mb-8 leading-[1.55]"
           style={{ fontFamily: "'Cormorant Garamond', serif" }}
         >
           They turned a blank apartment into something I genuinely love coming
           home to. Every detail was considered.
         </p>
-        <p className="text-[10px] tracking-[0.2em] uppercase text-[#b8b0a4] font-medium">
+        <p className="text-[9px] sm:text-[10px] tracking-[0.2em] uppercase text-[#b8b0a4] font-medium">
           — Amara O., Lagos — Residential project 2024
         </p>
       </section>
@@ -162,4 +158,3 @@ export default function HomePage() {
     </div>
   );
 }
-
