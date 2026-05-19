@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import FillerSection from "./filler-section";
 import Tracker from "./tracker";
+import ProductCarousel from "@/app/components/features/product-carousel";
 
 export default function HomePage() {
   return (
@@ -134,27 +135,10 @@ export default function HomePage() {
 
       <FillerSection />
 
-      {/* ── Testimonial ── */}
-      <section className="px-6 sm:px-12 py-16 sm:py-20 text-center border-t border-[#e5e0d8]">
-        <div
-          className="text-[64px] sm:text-[72px] leading-[0.6] italic text-[#e5e0d8] mb-6"
-          style={{ fontFamily: "'Cormorant Garamond', serif" }}
-        >
-          
-        </div>
-        <p
-          className="text-[19px] sm:text-[22px] md:text-[26px] font-light italic text-[#1e1b18] max-w-xs sm:max-w-lg md:max-w-2xl mx-auto mb-6 sm:mb-8 leading-[1.55]"
-          style={{ fontFamily: "'Cormorant Garamond', serif" }}
-        >
-          They turned a blank apartment into something I genuinely love coming
-          home to. Every detail was considered.
-        </p>
-        <p className="text-[9px] sm:text-[10px] tracking-[0.2em] uppercase text-[#b8b0a4] font-medium">
-          — Amara O., Lagos — Residential project 2024
-        </p>
-      </section>
+     {/* carousel effect showing products */}
+      
 
-      {/* footer */}
+      <ProductCarousel/>
     </div>
   );
 }

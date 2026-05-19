@@ -16,7 +16,7 @@ export interface CartItem {
   id: string;
   name: string;
   category: string;
-  price: number;        // base unit price in Naira
+  price: number;        
   imageSrc: string;
   imageAlt: string;
   quantity: number;

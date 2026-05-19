@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Fira_Code, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/features/navbar";
 import Footer from "./components/features/footer";
 import { CartProvider } from "@/app/context/cart-context";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const firaCode = Fira_Code({
+  variable: "--font-fira",
   subsets: ["latin"],
 });
 
@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${firaCode.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <CartProvider>
