@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useCart } from "@/app/context/cart-context";
 
 export default function CartPage() {
-  const { items, totalItems, totalPrice, removeItem, updateQty, clearCart } =
+  const { items, totalItems, totalPrice, removeItem, updateQuantity, clearCart } =
     useCart();
 
   const fmt = (n: number) => `₦${n.toLocaleString("en-NG")}`;
@@ -63,7 +63,7 @@ export default function CartPage() {
               {/* Thumbnail */}
               <div className="relative w-20 h-20 overflow-hidden bg-[#f0ece6]">
                 <Image
-                  src={item.src}
+                  src={item.imageSrc}
                   alt={item.name}
                   fill
                   className="object-cover object-center"
@@ -82,7 +82,7 @@ export default function CartPage() {
                   {item.name}
                 </p>
                 <p className="text-[12px] text-[#7a7268]">
-                  {fmt(item.basePrice)} / item
+                  {fmt(item.price)} / item
                 </p>
               </div>
 
@@ -91,7 +91,7 @@ export default function CartPage() {
                 {/* Stepper */}
                 <div className="flex items-center border border-[#e5e0d8]">
                   <button
-                    onClick={() => updateQty(item.id, item.quantity - 1)}
+                    onClick={() => updateQuantity(item.id, item.quantity - 1)}
                     disabled={item.quantity <= 1}
                     className="w-8 h-8 flex items-center justify-center text-base text-[#1e1b18] hover:bg-[#ede9e3] disabled:text-[#c8c4bc] disabled:cursor-default transition-colors"
                   >
@@ -101,7 +101,7 @@ export default function CartPage() {
                     {item.quantity}
                   </span>
                   <button
-                    onClick={() => updateQty(item.id, item.quantity + 1)}
+                    onClick={() => updateQuantity(item.id, item.quantity + 1)}
                     className="w-8 h-8 flex items-center justify-center text-base text-[#1e1b18] hover:bg-[#ede9e3] transition-colors"
                   >
                     +
@@ -110,7 +110,7 @@ export default function CartPage() {
 
                 {/* Line subtotal */}
                 <p className="text-[13px] font-medium text-[#1e1b18]">
-                  {fmt(item.basePrice * item.quantity)}
+                  {fmt(item.price * item.quantity)}
                 </p>
 
                 {/* Remove */}
@@ -158,7 +158,7 @@ export default function CartPage() {
                       <span className="text-[#a89a8c]">×{item.quantity}</span>
                     )}
                   </span>
-                  <span>{fmt(item.basePrice * item.quantity)}</span>
+                  <span>{fmt(item.price * item.quantity)}</span>
                 </div>
               ))}
             </div>
