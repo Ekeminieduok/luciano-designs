@@ -39,7 +39,7 @@ export default function ProductCard({
 
   const handleAdd = () => {
     if (basePrice && productId && name) {
-      addItem({ id: productId, name, category, src, basePrice, quantity });
+      addItem({ id: productId, name, category, imageSrc: src, imageAlt: alt, price: basePrice }, quantity);
     }
     setAdded(true);
     setTimeout(() => {
