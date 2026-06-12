@@ -84,7 +84,7 @@ export default function HomePage() {
             functional, and built to last.
           </p>
           <Link
-            href="/faqs"
+            href="/products"
             className="self-start text-[11px] tracking-[0.12em] uppercase text-[#1e1b18] border-b border-[#c8a97e] pb-0.5 no-underline mt-2"
           >
             Meet the studio →
@@ -107,9 +107,7 @@ export default function HomePage() {
         </div>
 
         <div className="bg-[#1e1b18] flex flex-col justify-center px-8 sm:px-12 py-12 sm:py-16">
-          <p className="text-[9px] tracking-[0.26em] uppercase text-[#6b5e4e] mb-5 sm:mb-6">
-            The Luciano Edit
-          </p>
+        
           <h2
             className="text-[30px] sm:text-[36px] md:text-[40px] font-light italic text-[#f0ebe3] leading-[1.15] mb-5 sm:mb-6"
             style={{ fontFamily: "'Cormorant Garamond', serif" }}

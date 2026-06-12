@@ -34,6 +34,54 @@ export default function AccentPrices() {
           price="From ₦155,000"
           height="h-[300px] md:h-[380px]"
         />
+        <ProductCard
+          src="/images/brown table.jpeg"
+          alt="brown table"
+          category="Tables"
+          name="Brown Centre Table"
+          price="From ₦165,000"
+          height="h-[300px] md:h-[380px]"
+        />
+        <ProductCard
+        src="/images/dotted mat.jpeg"
+        alt="dotted mat"
+        category="Rugs"
+        name="Dotted Rug"
+        price="From ₦120,000"
+        height="h-[300px] md:h-[380px]"
+        />
+        <ProductCard
+        src="/images/space men.jpeg"
+        alt="space"
+        category="Decor"
+        name="space men"
+        price="From ₦95,000"
+        height="h-[300px] md:h-[380px]"
+        />
+         <ProductCard
+        src="/images/little men.jpeg"
+        alt="little"
+        category="Decor"
+        name="little men"
+        price="From ₦95,000"
+        height="h-[300px] md:h-[380px]"
+        />
+        <ProductCard
+        src="/images/sculptured quails.jpeg"
+        alt="sculptured quails"
+        category="Decor"
+        name="Quails"
+        price="From ₦85,000"
+        height="h-[300px] md:h-[380px]"
+        />
+        <ProductCard
+        src="/images/molded twists.jpeg"
+        alt="molded twists"
+        category="Decor"
+        name="Molded Twists"
+        price="From ₦105,000"
+        height="h-[300px] md:h-[380px]"
+        />
       </div>
     </section>
   );
