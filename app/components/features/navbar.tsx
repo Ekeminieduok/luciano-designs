@@ -5,6 +5,7 @@ import { CiShoppingCart } from "react-icons/ci";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { useCart } from "@/app/context/cart-context";
+import Image from "next/image";
 
 const links = [
   { href: "/", label: "Home" },
@@ -45,21 +46,13 @@ export default function Navbar() {
             href="/"
             className="flex flex-col gap-0.5 no-underline shrink-0"
           >
-            <span
-              className="text-[20px] font-semibold tracking-[0.06em] text-[#1c1a17] leading-none"
-              style={{ fontFamily: "'Cormorant Garamond', serif" }}
-            >
-              Luciano{" "}
-              <em
-                className="not-italic font-normal text-[#8c7b68]"
-                style={{ fontStyle: "italic" }}
-              >
-                Designs
-              </em>
-            </span>
-            <span className="text-[7.5px] font-medium tracking-[0.26em] text-[#b8ad9e] uppercase">
-              Creative Studio
-            </span>
+            <Image
+              src="/images/logo.png"
+              alt="Logo"
+              width={100}
+              height={70}
+              priority
+            />
           </Link>
 
           {/* Desktop links — original styling */}
