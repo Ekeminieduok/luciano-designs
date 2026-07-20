@@ -64,7 +64,7 @@ export default function Navbar() {
                   <Link
                     href={link.href}
                     className={[
-                      "flex items-center gap-2 text-[13px] tracking-[0.05em] no-underline pb-px transition-all duration-200",
+                      "flex items-center gap-2 text-[15px] tracking-[0.05em] no-underline pb-px transition-all duration-200",
                       isActive
                         ? "text-[#1c1a17] font-medium border-b-[1.5px] border-[#c9a87c]"
                         : "text-[#6b6560] font-normal border-b border-transparent hover:text-[#1c1a17] hover:border-[#1c1a17]",
@@ -91,7 +91,7 @@ export default function Navbar() {
           {/* Desktop CTA — original styling */}
           <Link
             href="/contact"
-            className="hidden md:inline-flex items-center gap-1.5 bg-[#1c1a17] text-[#fafaf8] text-[12px] font-medium tracking-[0.08em] px-5 py-2 rounded-sm no-underline transition-colors duration-200 hover:bg-[#3a342a] group"
+            className="hidden md:inline-flex items-center gap-1.5 bg-[#1c1a17] text-[#fafaf8] text-[15px] font-medium tracking-[0.08em] px-5 py-2 rounded-sm no-underline transition-colors duration-200 hover:bg-[#3a342a] group"
           >
             Get in touch
             <span className="text-sm transition-transform duration-200 group-hover:translate-x-0.5">

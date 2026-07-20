@@ -5,8 +5,14 @@ import Link from "next/link";
 import { useCart } from "@/app/context/cart-context";
 
 export default function CartPage() {
-  const { items, totalItems, totalPrice, removeItem, updateQuantity, clearCart } =
-    useCart();
+  const {
+    items,
+    totalItems,
+    totalPrice,
+    removeItem,
+    updateQuantity,
+    clearCart,
+  } = useCart();
 
   const fmt = (n: number) => `₦${n.toLocaleString("en-NG")}`;
 
@@ -20,10 +26,10 @@ export default function CartPage() {
           Your cart is <em className="italic">empty</em>
         </p>
         <p className="text-[12.5px] text-[#7a7268]">
-          You  haven&apos;t added anything yet.
+          You haven&apos;t added anything yet.
         </p>
         <Link
-          href="/"
+          href="/products"
           className="text-[11px] tracking-widest uppercase text-[#7a7268] border-b border-[#e5e0d8] pb-0.5"
         >
           Continue shopping →
@@ -185,7 +191,7 @@ export default function CartPage() {
 
             <div className="mt-4 text-center">
               <Link
-                href="/"
+                href="/products"
                 className="text-[11px] tracking-widest uppercase text-[#7a7268] border-b border-[#e5e0d8] pb-0.5"
               >
                 Continue shopping →

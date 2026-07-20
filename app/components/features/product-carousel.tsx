@@ -22,43 +22,36 @@ const slides = [
     href: "/products",
   },
   {
-    src: "/images/coffee-table-wood.webp",
+    src: "/images/Statue floor lamp.webp",
     alt: "Hexagonal walnut coffee table",
     category: "Lighting",
-    name: "Dancer Table Lamp",
-    price: "From ₦420,000",
+    name: "Statue floor lamp",
+    price: "From ₦900,000",
     href: "/products",
   },
   {
-    src: "/images/lamp-sculptural.webp",
-    alt: "Sculptural dancer table lamp",
-    category: "Accent",
-    name: "Sculptural Lamp",
+    src: "/images/top table.jpeg",
+    alt: "Top table",
+    category: "Tables",
+    name: "Top Table",
     price: "From ₦290,000",
     href: "/products",
   },
+
   {
-    src: "/images/chairs-grey.jpg",
-    alt: "Cream and grey upholstered luxury dining chairs",
-    category: "Dining",
-    name: "Luxe Dining Chair",
-    price: "From ₦195,000",
+    src: "/images/chair-wood-dining.webp",
+    alt: "Floor lamp",
+    category: "Lighting",
+    name: "Floor Lamp",
+    price: "From ₦220,000",
     href: "/products",
   },
   {
     src: "/images/coffee-table-glass.webp",
-    alt: "Round glass top coffee table",
-    category: "Tables",
-    name: "Glass Round Coffee Table",
-    price: "From ₦310,000",
-    href: "/products",
-  },
-  {
-    src: "/images/chair-wood-dining.webp",
-    alt: "Walnut wood dining chair",
-    category: "Dining",
-    name: "Walnut Dining Chair",
-    price: "From ₦220,000",
+    alt: "Nordic chair",
+    category: "Chairs",
+    name: "Nordic chair",
+    price: "From ₦130,000",
     href: "/products",
   },
 ];
@@ -71,14 +64,14 @@ export default function ProductCarousel() {
       {/* Header */}
       <div className="flex items-end justify-between mb-8 md:mb-10">
         <div>
-          <p className="text-[9px] tracking-[0.26em] uppercase text-[#c8a97e] font-medium mb-3">
+          <p className="text-[12px] tracking-[0.26em] uppercase text-[#c8a97e] font-medium mb-3">
             Featured pieces
           </p>
           
         </div>
         <Link
           href="/products"
-          className="text-[11px] tracking-widest uppercase text-[#7a7268] border-b border-[#e5e0d8] pb-0.5 no-underline shrink-0 ml-4 hover:text-[#1e1b18] hover:border-[#1e1b18] transition-colors"
+          className="text-[13px] font-bold tracking-widest uppercase text-[#7a7268] border-b border-[#e5e0d8] pb-0.5 no-underline shrink-0 ml-4 hover:text-[#1e1b18] hover:border-[#1e1b18] transition-colors"
         >
           Shop all →
         </Link>

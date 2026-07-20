@@ -46,7 +46,7 @@ export default function HomePage() {
             <em className="italic font-normal text-[#c8a97e]">Dream</em> Space
           </h1>
 
-          <p className="text-[14px] sm:text-[16px] font-light text-white/80 max-w-xs sm:max-w-md md:max-w-2xl leading-[1.75] mb-8 sm:mb-10 tracking-[0.02em]">
+          <p className="text-[16px] sm:text-[18px] font-light text-white/80 max-w-xs sm:max-w-md md:max-w-2xl leading-[1.75] mb-8 sm:mb-10 tracking-[0.02em]">
             Elevate your home with our curated selection of stylish furniture
             and interior designs.
           </p>
@@ -72,13 +72,13 @@ export default function HomePage() {
         </h2>
         <div className="flex flex-col gap-5">
           <div className="w-9 h-px bg-[#c8a97e]" />
-          <p className="text-[13px] sm:text-[13.5px] text-[#7a7268] leading-[1.85] font-light">
+          <p className="text-[13px] sm:text-[18px] text-[#7a7268] leading-[1.85] font-light">
             At Luciano Designs, we believe furniture should do more than fill a
             room. Each piece is considered — the weight of the wood, the curve
             of an armrest, the way afternoon light hits a surface. We design for
             feeling.
           </p>
-          <p className="text-[13px] sm:text-[13.5px] text-[#7a7268] leading-[1.85] font-light">
+          <p className="text-[13px] sm:text-[18px] text-[#7a7268] leading-[1.85] font-light">
             Based in Lagos, we work with clients across West Africa and beyond
             to create interiors that are deeply personal, beautifully
             functional, and built to last.
@@ -118,7 +118,7 @@ export default function HomePage() {
             <br />
             actually live.
           </h2>
-          <p className="text-[13px] text-[#8a7e72] leading-[1.8] font-light mb-8 sm:mb-10">
+          <p className="text-[18px] text-[#8a7e72] leading-[1.8] font-light mb-8 sm:mb-10">
             Every home has its own rhythm. We listen to yours before we design
             anything — then we make it beautiful.
           </p>

@@ -4,7 +4,7 @@ export default function FillerSection() {
   return (
     <div className="px-6 md:px-12 py-14 md:py-20 border-t border-[#e5e0d8]">
       <div className="mb-10 md:mb-12">
-        <p className="text-[9px] tracking-[0.26em] uppercase text-[#c8a97e] font-medium mb-3">
+        <p className="text-[12px] tracking-[0.26em] uppercase text-[#c8a97e] font-medium mb-3">
           Why Luciano
         </p>
         <h2
@@ -19,7 +19,7 @@ export default function FillerSection() {
         {[
           {
             n: "01",
-            t: "Handcrafted",
+            t: "Handcrafted and imported",
             d: "Every piece built by skilled local artisans using traditional joinery and premium materials.",
           },
           {
@@ -48,7 +48,7 @@ export default function FillerSection() {
             <div className="text-[12px] font-medium tracking-[0.08em] uppercase text-[#1e1b18] mb-3">
               {t}
             </div>
-            <div className="text-[12.5px] text-[#7a7268] leading-[1.75] font-light">
+            <div className="text-[15px] text-[#7a7268] leading-[1.75] font-light">
               {d}
             </div>
           </div>

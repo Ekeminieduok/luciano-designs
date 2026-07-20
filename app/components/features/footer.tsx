@@ -1,11 +1,14 @@
 "use client";
 
 import Link from "next/link";
+import { FaInstagram } from "react-icons/fa6";
+import { FaWhatsapp } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa";
 
 export default function Footer() {
     return (
           <section className="bg-[#1e1b18] px-12 py-20 text-center">
-    <p className="text-[9px] tracking-[0.26em] uppercase text-[#6b5e4e] mb-6">
+    <p className="text-[12px] tracking-[0.26em] uppercase text-white mb-6">
       Let&apos;s create together
     </p>
     <h2
@@ -14,7 +17,7 @@ export default function Footer() {
     >
       Got a project in <span className="not-italic text-[#c8a97e]">mind?</span>
     </h2>
-    <p className="text-[13px] text-[#7a7268] font-light mb-10">
+    <p className="text-[15px] text-[#7a7268] font-light mb-10">
       Join our list for collection drops, design inspiration, and studio news.
     </p>
     <div className="flex justify-center">
@@ -31,6 +34,12 @@ export default function Footer() {
       >
         Subscribe
       </Link>
+    </div>
+
+    <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
+        <FaInstagram />
+        <FaWhatsapp />
+        <FaTiktok />
     </div>
   </section>
   );

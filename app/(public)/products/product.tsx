@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import ProductCard from "../(home)/product-card";
-import AccentPrices from "./accent-prices";
+import AccentPrices from "./accent-pieces";
 
 export default function Product() {
   return (
@@ -10,7 +10,7 @@ export default function Product() {
       {/* Header */}
       <div className="flex items-end justify-between mb-8 md:mb-10">
         <div>
-          <p className="text-[9px] tracking-[0.26em] uppercase text-[#c8a97e] font-medium mb-3">
+          <p className="text-[12px] tracking-[0.26em] uppercase text-[#c8a97e] font-medium mb-3">
             Products
           </p>
           <h2
@@ -20,12 +20,9 @@ export default function Product() {
             The <em className="italic">collection</em>
           </h2>
         </div>
-        <Link
-          href="/product"
-          className="text-[11px] tracking-widest uppercase text-[#7a7268] border-b border-[#e5e0d8] pb-0.5 no-underline shrink-0 ml-4"
-        >
-          Shop all →
-        </Link>
+        <p className="text-[13px] tracking-widest uppercase text-[#7a7268] border-b border-[#e5e0d8] pb-0.5 no-underline shrink-0 ml-4">
+          Shop all
+        </p>
       </div>
 
       {/* First row — 1 col mobile, 2 col sm, 3 col md+ */}
@@ -42,24 +39,24 @@ export default function Product() {
         />
         <ProductCard
           productId="dancer-table-lamp"
-          src="/images/coffee-table-wood.webp"
+          src="/images/Statue floor lamp.webp"
           alt="Hexagonal walnut coffee table"
           category="Lighting"
-          name="Dancer Table Lamp"
-          price="From ₦420,000"
+          name="Statue floor lamp"
+          price="From ₦900,000"
           height="h-[260px] md:h-[320px]"
           basePrice={420000}
         />
-       <ProductCard 
-       productId="glass ball"
-       src="/images/glass ball.jpeg"
-       alt="glass ball"
-       category="Decor"
-       name="Glass Ball"
-        price="From ₦75,000"
-        height="h-[260px] md:h-[320px]"
-        basePrice={75000}
-       />
+        <ProductCard
+          productId="glass ball"
+          src="/images/glass ball.jpeg"
+          alt="glass ball"
+          category="Decor"
+          name="Glass Ball"
+          price="From ₦75,000"
+          height="h-[260px] md:h-[320px]"
+          basePrice={75000}
+        />
       </div>
 
       {/* Second row */}
@@ -75,24 +72,68 @@ export default function Product() {
           basePrice={195000}
         />
         <ProductCard
-          productId="glass-coffee-table"
+          productId="Nordic chair"
           src="/images/coffee-table-glass.webp"
-          alt="Round glass top coffee table"
-          category="Tables"
-          name="Glass Round Coffee Table"
-          price="From ₦310,000"
+          alt="Nordic chair"
+          category="Chairs"
+          name="Nordic chair"
+          price="From ₦130,000"
           height="h-[240px] md:h-[280px]"
-          basePrice={310000}
+          basePrice={130000}
         />
         <ProductCard
-          productId="walnut-dining-chair"
+          productId="Floor lamp"
           src="/images/chair-wood-dining.webp"
-          alt="Walnut wood dining chair"
-          category="Dining"
-          name="Walnut Dining Chair"
+          alt="Floor lamp"
+          category="Lighting"
+          name="Floor lamp"
           price="From ₦220,000"
           height="h-[240px] md:h-[280px]"
           basePrice={220000}
+        />
+
+        <ProductCard
+          productId=" floor lamp"
+          src="/images/Luxury floor lamp.png"
+          alt="Luxury floor lamp"
+          category="Lighting"
+          name="Luxury Floor Lamp"
+          price="From ₦350,000"
+          height="h-[240px] md:h-[280px]"
+          basePrice={350000}
+        />
+
+        <ProductCard
+          productId="floor lamp"
+          src="/images/floor lamp.png"
+          alt="Floor lamp"
+          category="Lighting"
+          name="Floor Lamp"
+          price="From ₦380,000"
+          height="h-[240px] md:h-[280px]"
+          basePrice={380000}
+        />
+
+        <ProductCard
+          productId="table lamp"
+          src="/images/table lamp.png"
+          alt="Table lamp"
+          category="Lighting"
+          name="Table Lamp"
+          price="From ₦160,000"
+          height="h-[240px] md:h-[280px]"
+          basePrice={160000}
+        />
+
+        <ProductCard
+          productId="Oval shaped mirror "
+          src="/images/Oval shaped mirror .png"
+          alt="Oval shaped mirror"
+          category="Decor"
+          name="Oval Shaped Mirror"
+          price="From ₦120,000"
+          height="h-[240px] md:h-[280px]"
+          basePrice={120000}
         />
         <ProductCard
           productId="center-table"
@@ -104,55 +145,77 @@ export default function Product() {
           height="h-[240px] md:h-[280px]"
           basePrice={105000}
         />
-        <ProductCard 
-          productId = "side-couch"
+        <ProductCard
+          productId="side-couch"
           src="/images/couch.jpeg"
-          alt= "side couch"
+          alt="side couch"
           category="Seating"
-          name="side couch"
+          name="Side couch"
           price="From ₦150,000"
           height="h-[240px] md:h-[280px]"
           basePrice={150000}
         />
-        <ProductCard 
-        productId = "lined-dining-mat"
-        src="/images/crossed line mat.jpeg"
-        alt= "crossed line mat"
-        category="Rugs"
-        name="Crossed Line Mat"
-        price="From ₦85,000"
-        height="h-[240px] md:h-[280px]"
-        basePrice={85000}
+        <ProductCard
+          productId="lined-dining-mat"
+          src="/images/crossed line mat.jpeg"
+          alt="crossed line mat"
+          category="Rugs"
+          name="Crossed Line Mat"
+          price="From ₦85,000"
+          height="h-[240px] md:h-[280px]"
+          basePrice={85000}
         />
-        <ProductCard 
-        productId = "dinning-set"
-        src="/images/dinning set.jpeg"
-        alt= "dinning set"
-        category="chairs"
-        name="Dinning Set"
-        price="From ₦325,000"
-        height="h-[240px] md:h-[280px]"
-        basePrice={325000}
+        <ProductCard
+          productId="dinning-set"
+          src="/images/dinning set.jpeg"
+          alt="dinning set"
+          category="chairs"
+          name="Dinning Set"
+          price="From ₦325,000"
+          height="h-[240px] md:h-[280px]"
+          basePrice={325000}
         />
-        <ProductCard 
-        productId = "plain couch"
-        src="/images/plain couch.jpeg"
-        alt= "plain couch"
-        category="chairs"
-        name="Plain Couch"
-        price="From ₦250,000"
-        height="h-[240px] md:h-[280px]"
-        basePrice={250000}
+        <ProductCard
+          productId="plain couch"
+          src="/images/plain couch.jpeg"
+          alt="plain couch"
+          category="chairs"
+          name="Plain Couch"
+          price="From ₦250,000"
+          height="h-[240px] md:h-[280px]"
+          basePrice={250000}
         />
-        <ProductCard 
-        productId = "side-chairs"
-        src="/images/side chairs.jpeg"
-        alt= "side chairs"
-        category="chairs"
-        name="Side Chairs"
-        price="From ₦300,000"
-        height="h-[240px] md:h-[280px]"
-        basePrice={300000}
+        <ProductCard
+          productId="side-chairs"
+          src="/images/side chairs.jpeg"
+          alt="side chairs"
+          category="chairs"
+          name="Side Chairs"
+          price="From ₦300,000"
+          height="h-[240px] md:h-[280px]"
+          basePrice={300000}
+        />
+
+        <ProductCard
+          productId="coffee table set"
+          src="/images/coffee table set.png"
+          alt="Coffee table set"
+          category="Tables"
+          name="Coffee Table Set"
+          price="From ₦170,000"
+          height="h-[240px] md:h-[280px]"
+          basePrice={170000}
+        />
+
+        <ProductCard
+          productId="bar stools"
+          src="/images/Bar stool.png"
+          alt="Bar stools"
+          category="Seating"
+          name="Bar Stools"
+          price="From ₦180,000"
+          height="h-[240px] md:h-[280px]"
+          basePrice={180000}
         />
       </div>
 
