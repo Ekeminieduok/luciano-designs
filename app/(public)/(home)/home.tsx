@@ -120,7 +120,7 @@ export default function HomePage() {
           </h2>
           <p className="text-[18px] text-[#8a7e72] leading-[1.8] font-light mb-8 sm:mb-10">
             Every home has its own rhythm. We listen to yours before we design
-            anything — then we make it beautiful.
+            anything then we make it beautiful.
           </p>
           <Link
             href="/contact"
