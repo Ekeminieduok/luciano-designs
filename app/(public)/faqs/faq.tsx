@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-
+import { motion } from "framer-motion";
 const faqs = [
   {
     q: "What exactly does Luciano Designs do?",
@@ -102,13 +102,22 @@ export default function FAQPage() {
 
           {/* Right — CEO image with overlay treatment */}
           <div className="relative min-h-[60vh] md:min-h-full order-1 md:order-2">
-            <Image
-              src="/images/luciano.jpeg"
-              alt="Founder & CEO of Luciano Designs"
-              fill
-              className="object-cover object-top"
-              priority
-            />
+            <motion.div
+              className="absolute inset-0"
+              initial={{ x: 100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.9, ease: "easeOut" }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
+              <Image
+                src="/images/luciano.jpeg"
+                alt="Founder & CEO of Luciano Designs"
+                fill
+                className="object-cover object-top"
+                priority
+              />
+            </motion.div>
+
             {/* gradient overlay so it bleeds into dark side on desktop */}
             <div className="absolute inset-0 bg-gradient-to-t from-[#1e1b18] via-transparent to-transparent md:bg-gradient-to-r md:from-[#1e1b18] md:via-transparent md:to-transparent opacity-60" />
 
