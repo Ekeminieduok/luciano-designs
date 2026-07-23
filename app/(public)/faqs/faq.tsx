@@ -267,7 +267,7 @@ export default function FAQPage() {
           style={{ fontFamily: "'Cormorant Garamond', serif" }}
           aria-hidden="true"
         >
-          "
+          &ldquo;
         </div>
         <p
           className="text-[24px] md:text-[32px] font-light italic text-[#1e1b18] leading-[1.3] mb-6"
@@ -275,7 +275,7 @@ export default function FAQPage() {
         >
           Still have a question?
           <br />
-          <span className="text-[#c8a97e]">We'd love to hear from you.</span>
+          <span className="text-[#c8a97e]">We&apos;d love to hear from you.</span>
         </p>
         <p className="text-[13px] text-[#7a7268] leading-[1.85] mb-8 font-light">
           Book a free consultation — no commitment, no pressure. Just a

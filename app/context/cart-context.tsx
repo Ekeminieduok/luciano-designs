@@ -118,7 +118,6 @@ export function CartProvider({ children }: { children: ReactNode }) {
     } finally {
       hydrated.current = true;
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // Persist items to localStorage — but only after hydration so we don't
