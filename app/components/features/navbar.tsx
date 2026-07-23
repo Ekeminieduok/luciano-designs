@@ -24,7 +24,10 @@ export default function Navbar() {
 
   // Track scroll only on homepage
   useEffect(() => {
-    if (!isHome) { setScrolled(false); return; }
+    if (!isHome) {
+      const id = setTimeout(() => setScrolled(false), 0);
+      return () => clearTimeout(id);
+    }
     const onScroll = () => setScrolled(window.scrollY > 20);
     onScroll(); // check on mount
     window.addEventListener("scroll", onScroll, { passive: true });
@@ -35,7 +38,8 @@ export default function Navbar() {
   useEffect(() => {
     if (prevPathname.current !== pathname) {
       prevPathname.current = pathname;
-      setMenuOpen(false);
+      const id = setTimeout(() => setMenuOpen(false), 0);
+      return () => clearTimeout(id);
     }
   }, [pathname]);
 

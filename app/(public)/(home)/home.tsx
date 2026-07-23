@@ -205,7 +205,7 @@ export default function HomePage() {
             style={{ fontFamily: "'Cormorant Garamond', serif" }}
             aria-hidden="true"
           >
-            "
+            &ldquo;
           </div>
 
           <p
