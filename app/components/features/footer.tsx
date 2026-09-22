@@ -44,6 +44,7 @@ export default function Footer() {
         <input
           type="email"
           placeholder="Your email address"
+           suppressHydrationWarning
           className="bg-transparent border border-[#3a342c] sm:border-r-0 text-[#f0ebe3] placeholder-[#5a5048] text-[16px] px-5 py-3 w-full outline-none focus:border-[#c8a97e] transition-colors duration-200"
         />
         <Link
