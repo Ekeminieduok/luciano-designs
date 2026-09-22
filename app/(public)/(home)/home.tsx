@@ -55,7 +55,7 @@ export default function HomePage() {
             </h1>
 
             <p className="text-[15px] sm:text-[19px] font-light text-white/55 max-w-[300px] sm:max-w-sm leading-[1.85] mb-8 sm:mb-10">
-              Bespoke interiors, custom furniture, and curated pieces — crafted
+              Bespoke interiors, custom furniture, and curated pieces crafted
               for how you actually live.
             </p>
 
@@ -224,6 +224,24 @@ export default function HomePage() {
           </div>
         </div>
       </motion.section>
+
+
+      {/* ── VIDEO SECTION ── */}
+<motion.section
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ duration: 1.5, ease: "easeInOut" }}
+  className="w-full overflow-hidden bg-[#1e1b18]"
+>
+  <video
+    src="/showreel.mp4"
+    autoPlay
+    muted
+    loop
+    playsInline
+    className="w-full max-h-[95vh] object-cover"
+  />
+</motion.section>
 
       {/* ── FINAL CTA ── */}
       <section className="border-t border-[#e5e0d8] px-6 sm:px-10 md:px-20 py-24 md:py-40">
