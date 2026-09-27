@@ -58,26 +58,18 @@ export default function HomePage() {
               Bespoke interiors, custom furniture, and curated pieces crafted
               for how you actually live.
             </p>
+          </div>
 
-            <div className="flex flex-col items-start gap-4">
-              <Link
-                href="/products"
-                className="inline-flex items-center gap-2 bg-[#c8a97e] text-[#1e1b18] text-[11px] font-semibold tracking-[0.1em] uppercase px-7 py-3.5 no-underline transition-all duration-200 hover:bg-[#b8956a] group"
-              >
-                Explore the collection
-                <span className="transition-transform duration-200 group-hover:translate-x-1">
-                  →
-                </span>
-              </Link>
-              <a
-                href="https://wa.me/2347039602582?text=Hi%20Luciano%20Designs%2C%20I%27d%20like%20to%20book%20a%20consultation"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[14px] tracking-[0.1em] uppercase text-white/45 hover:text-[#c8a97e] transition-colors duration-200 no-underline border-b border-white/20 hover:border-[#c8a97e] pb-px"
-              >
-                Book a free consultation
-              </a>
-            </div>
+          <div className="flex w-full justify-center">
+            <Link
+              href="/products"
+              className="inline-flex w-full max-w-sm items-center justify-center gap-2 rounded-[17px] bg-[#c8a97e] px-7 py-4 text-center text-[11px] font-semibold uppercase tracking-[0.1em] text-[#1e1b18] no-underline transition-all duration-200 hover:bg-[#b8956a] group"
+            >
+              Explore the collection
+              <span className="transition-transform duration-200 group-hover:translate-x-1">
+                →
+              </span>
+            </Link>
           </div>
 
           <div className="absolute bottom-8 right-8 hidden md:flex flex-col items-center gap-3">
@@ -97,7 +89,7 @@ export default function HomePage() {
         {/* Image — taller on mobile so it reads as a proper image, not a sliver */}
         <div className="relative h-[80vw] sm:h-[60vw] md:h-auto md:min-h-[520px] overflow-hidden">
           <Image
-            src="/images/layer.jpg"
+            src="/images/layer(2).jpg"
             alt="Luciano Designs interior detail"
             fill
             className="object-cover object-center"
@@ -129,7 +121,7 @@ export default function HomePage() {
           </h2>
           <p className="text-[15px] sm:text-[18px] text-[#7a7268] leading-[1.9] font-light mb-4">
             At Luciano Designs, we believe furniture should do more than fill a
-            room. Each piece is considered — the weight of the wood, the curve
+            room. Each piece is considered the weight of the wood, the curve
             of an armrest, the way afternoon light hits a surface.
           </p>
           <p className="text-[13px] sm:text-[13.5px] text-[#7a7268] leading-[1.9] font-light mb-8">
@@ -212,22 +204,23 @@ export default function HomePage() {
             className="text-[20px] sm:text-[26px] md:text-[32px] font-light text-[#1e1b18] leading-[1.45] mb-6"
             style={{ fontFamily: "'Cormorant Garamond', serif" }}
           >
-            They turned a blank apartment into something I genuinely love coming
-            home to. Every detail was considered.
+            They transformed a completely bare apartment into a space I
+            genuinely love coming home to. Every material, every placement,
+            every finish all of it considered. Luciano Designs didn't just
+            furnish a room; they gave it a soul.
           </p>
 
           <div className="flex items-center gap-4">
             <div className="w-8 h-px bg-[#c8a97e] shrink-0" />
             <p className="text-[13px] tracking-[0.18em] uppercase text-[#b8b0a4] font-medium">
-              Amara O. — Lagos, Residential Project 2024
+              Linda O. Lagos, Residential Project 2025
             </p>
           </div>
         </div>
       </motion.section>
 
-
       {/* ── VIDEO SECTION ── */}
-<motion.section
+      {/* <motion.section
   initial={{ opacity: 0 }}
   animate={{ opacity: 1 }}
   transition={{ duration: 1.5, ease: "easeInOut" }}
@@ -241,7 +234,7 @@ export default function HomePage() {
     playsInline
     className="w-full max-h-[95vh] object-cover"
   />
-</motion.section>
+</motion.section> */}
 
       {/* ── FINAL CTA ── */}
       <section className="border-t border-[#e5e0d8] px-6 sm:px-10 md:px-20 py-24 md:py-40">

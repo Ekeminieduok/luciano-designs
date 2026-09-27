@@ -62,14 +62,14 @@ export default function Product() {
       {/* Second row */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[1.5px] bg-[#e5e0d8]">
         <ProductCard
-          productId="luxe-dining-chair"
-          src="/images/chairs-grey.jpg"
+          productId="Dining set"
+          src="/images/dinning set(2).jpg"
           alt="Cream and grey upholstered luxury dining chairs"
           category="Dining"
-          name="LUXE DINING CHAIR"
-          price="From ₦195,000"
+          name="DINING SET"
+          price="From ₦900,000"
           height="h-[240px] md:h-[280px]"
-          basePrice={195000}
+          basePrice={900000}
         />
         <ProductCard
           productId="Nordic chair"
@@ -93,14 +93,14 @@ export default function Product() {
         />
 
         <ProductCard
-          productId=" floor lamp"
-          src="/images/Luxury floor lamp.png"
-          alt="Luxury floor lamp"
-          category="Lighting"
-          name="LUXURY FLOOR LAMP"
-          price="From ₦350,000"
+          productId="Table Console"
+          src="/images/Table Console.jpg"
+          alt="Table Console"
+          category="TABLE"
+          name="TABLE CONSOLE"
+          price="From ₦600,000"
           height="h-[240px] md:h-[280px]"
-          basePrice={350000}
+          basePrice={600000}
         />
 
         <ProductCard
@@ -126,14 +126,14 @@ export default function Product() {
         />
 
         <ProductCard
-          productId="Oval shaped mirror "
-          src="/images/Oval shaped mirror .png"
-          alt="Oval shaped mirror"
+          productId="velvet floor mirror"
+          src="/images/velvet floor mirror.jpg"
+          alt="velvet floor mirror"
           category="Decor"
-          name="OVAL SHAPED MIRROR"
-          price="From ₦120,000"
+          name="VELVET FLOOR MIRROR"
+          price="From ₦220,000"
           height="h-[240px] md:h-[280px]"
-          basePrice={120000}
+          basePrice={220000}
         />
         <ProductCard
           productId="center-table"
@@ -166,14 +166,14 @@ export default function Product() {
           basePrice={85000}
         />
         <ProductCard
-          productId="dinning-set"
-          src="/images/dinning set.jpeg"
-          alt="dinning set"
-          category="chairs"
-          name="DINNING SET"
-          price="From ₦325,000"
+          productId="Center table"
+          src="/images/Center table.jpg"
+          alt="Center table"
+          category="Tables"
+          name="CENTER TABLE"
+          price="From ₦640,000"
           height="h-[240px] md:h-[280px]"
-          basePrice={325000}
+          basePrice={640000}
         />
         <ProductCard
           productId="plain couch"
@@ -197,14 +197,14 @@ export default function Product() {
         />
 
         <ProductCard
-          productId="coffee table set"
-          src="/images/coffee table set.png"
-          alt="Coffee table set"
+          productId="center-table"
+          src="/images/center table (2).jpg"
+          alt="Center table"
           category="Tables"
-          name="COFFEE TABLE SET"
-          price="From ₦170,000"
+          name="CENTER TABLE"
+          price="From ₦130,000"
           height="h-[240px] md:h-[280px]"
-          basePrice={170000}
+          basePrice={130000}
         />
 
         <ProductCard
@@ -216,6 +216,39 @@ export default function Product() {
           price="From ₦180,000"
           height="h-[240px] md:h-[280px]"
           basePrice={180000}
+        />
+
+        <ProductCard
+          productId="luxury-floor-lamp"
+          src="/images/Luxury floor lamp.jpg"
+          alt="Luxury floor lamp"
+          category="Lighting"
+          name="LUXURY FLOOR LAMP"
+          price="From ₦350,000"
+          height="h-[240px] md:h-[280px]"
+          basePrice={350000}
+        />
+
+        <ProductCard
+          productId="brown-table"
+          src="/images/brown table.jpg"
+          alt="Brown table"
+          category="Tables"
+          name="BROWN TABLE"
+          price="From ₦250,000"
+          height="h-[240px] md:h-[280px]"
+          basePrice={250000}
+        />
+
+        <ProductCard
+          productId="coffee-table"
+          src="/images/coffee table.jpg"
+          alt="Coffee table"
+          category="Tables"
+          name="COFFEE TABLE"
+          price="From ₦200,000"
+          height="h-[240px] md:h-[280px]"
+          basePrice={200000}
         />
       </div>
 

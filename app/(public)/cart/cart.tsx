@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useCart } from "@/app/context/cart-context";
+import CheckoutButton from "@/app/components/features/checkout-button";
 
 export default function CartPage() {
   const {
@@ -39,7 +40,7 @@ export default function CartPage() {
   }
 
   return (
-    <div className="px-12 py-14">
+    <div className="px-6 md:px-12 py-14">
       {/* Header */}
       <div className="flex items-end justify-between mb-10">
         <div>
@@ -94,7 +95,6 @@ export default function CartPage() {
 
               {/* Right: stepper + subtotal + remove */}
               <div className="flex flex-col items-end gap-2.5">
-                {/* Stepper */}
                 <div className="flex items-center border border-[#e5e0d8]">
                   <button
                     onClick={() => updateQuantity(item.id, item.quantity - 1)}
@@ -114,12 +114,10 @@ export default function CartPage() {
                   </button>
                 </div>
 
-                {/* Line subtotal */}
                 <p className="text-[13px] font-medium text-[#1e1b18]">
                   {fmt(item.price * item.quantity)}
                 </p>
 
-                {/* Remove */}
                 <button
                   onClick={() => removeItem(item.id)}
                   className="text-[11px] tracking-widest uppercase text-[#b0a898] hover:text-[#1e1b18] transition-colors"
@@ -130,7 +128,6 @@ export default function CartPage() {
             </div>
           ))}
 
-          {/* Clear cart */}
           <div className="mt-4 flex justify-end">
             <button
               onClick={clearCart}
@@ -151,7 +148,6 @@ export default function CartPage() {
               Order summary
             </p>
 
-            {/* Line items */}
             <div className="flex flex-col gap-3 mb-6">
               {items.map((item) => (
                 <div
@@ -184,10 +180,8 @@ export default function CartPage() {
               </div>
             </div>
 
-            {/* Checkout CTA */}
-            <button className="w-full h-11 bg-[#1e1b18] text-[#f7f5f2] text-[10px] tracking-[0.2em] uppercase font-medium hover:bg-[#3a342c] transition-colors">
-              Proceed to checkout
-            </button>
+            {/* ── Paystack checkout ── */}
+            <CheckoutButton />
 
             <div className="mt-4 text-center">
               <Link
