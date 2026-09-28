@@ -24,12 +24,10 @@ export default function Navbar() {
 
   // Track scroll only on homepage
 useEffect(() => {
-  if (!isHome) {
-    setScrolled(false);
-    return;
-  }
+  if (!isHome) return;
+
   const onScroll = () => setScrolled(window.scrollY > 20);
-  onScroll();
+  onScroll(); // runs on mount — if not home page, scrolled stays false from initial state
   window.addEventListener("scroll", onScroll, { passive: true });
   return () => window.removeEventListener("scroll", onScroll);
 }, [isHome]);

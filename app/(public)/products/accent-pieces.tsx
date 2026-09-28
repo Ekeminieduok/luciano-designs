@@ -19,14 +19,14 @@ export default function AccentPieces() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-[1.5px] bg-[#e5e0d8]">
         <ProductCard
-          productId="side-table-black"
-          src="/images/side-table-black.webp"
-          alt="Glossy black sculptural pedestal side table"
-          category="Tables"
-          name="SIDE TABLE"
-          price="From ₦60,000"
+          productId="family decor"
+          src="/images/family piece.jpg"
+          alt="family decor"
+          category="Decor"
+          name="FAMILY PIECE"
+          price="From ₦20,000"
           height="h-[300px] md:h-[380px]"
-          basePrice={60000}
+          basePrice={20000}
         />
         <ProductCard
           productId="glass-centre-table"
@@ -149,14 +149,14 @@ export default function AccentPieces() {
           basePrice={12000}
         />
         <ProductCard
-          productId="floor-sculpture-lamp"
-          src="/images/Floor sculpture lamp.png"
-          alt="Floor sculpture lamp"
-          category="Lighting"
-          name="FLOOR SCULPTURE LAMP"
-          price="From ₦1,000,000"
+          productId="center table"
+          src="/images/center table(5).jpg"
+          alt="center table"
+          category="Tables"
+          name="CENTER TABLE"
+          price="From ₦640,000"
           height="h-[300px] md:h-[380px]"
-          basePrice={1000000}
+          basePrice={640000}
         />
       </div>
     </section>

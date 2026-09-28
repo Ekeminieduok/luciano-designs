@@ -14,11 +14,11 @@ import { useRef } from "react";
 
 const slides = [
   {
-    src: "/images/chair-knot-hero.webp",
-    alt: "Sculptural knotted lounge chair in terracotta",
-    category: "Seating",
-    name: "THE KNOT LOUNGE CHAIR",
-    price: "From ₦680,000",
+    src: "/images/Luxury floor lamp.jpg",
+    alt: "Luxury floor lamp",
+    category: "Lighting",
+    name: "LUXURY FLOOR LAMP",
+    price: "From ₦350,000",
     href: "/products",
   },
   {
@@ -30,11 +30,11 @@ const slides = [
     href: "/products",
   },
   {
-    src: "/images/top table.jpeg",
-    alt: "Top table",
+    src: "/images/brown table.jpg",
+    alt: "Brown table",
     category: "Tables",
-    name: "TOP TABLE",
-    price: "From ₦290,000",
+    name: "BROWN TABLE",
+    price: "From ₦250,000",
     href: "/products",
   },
 
