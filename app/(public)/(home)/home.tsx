@@ -206,7 +206,7 @@ export default function HomePage() {
           >
             They transformed a completely bare apartment into a space I
             genuinely love coming home to. Every material, every placement,
-            every finish all of it considered. Luciano Designs didn't just
+            every finish all of it considered. Luciano Designs didn&apos;t just
             furnish a room; they gave it a soul.
           </p>
 
